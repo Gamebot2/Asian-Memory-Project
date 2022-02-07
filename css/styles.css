@@ -5,12 +5,10 @@
   font-style: normal;
 }
 
-html, body {
+html {
   margin: 0;
   padding: 0;
-  background: #005081;
-  height: 100%;
-  width: 100%;
+  background-image: linear-gradient(#C86AFF, #001355);
 }
 
 .parent-center {
@@ -41,9 +39,10 @@ html, body {
 }
 
 .heading {
-  font-family: 'Beba Neue';
+  font-family: 'Gill Sans';
   color: #FFFFFF;
   color: white;
+  font-size: 1em;
 }
 
 .normal-text {
@@ -52,12 +51,8 @@ html, body {
   color: white;
 }
 
-.contents {
-  margin: 5vw 6vw;
-}
-
 .content-margin {
-  margin: 2vw;
+  margin: 0 8vw;
 }
 
 .content img {
@@ -114,6 +109,9 @@ html, body {
   .conditional-no-margin-top {
     margin-top: 0px;
   }
+  .conditional-top {
+    margin-top: 5vh;
+  }
   .title {
     font-size: 200px;
     font-size: 15vw;
@@ -131,10 +129,10 @@ html, body {
     font-size: 1.5vw;
   }
   .contents {
-    display: flex;
+    display: block
   }
   .content {
-    width: 50%;
+    width: 60%;
   }
   .content .answer {
     font-size: 1.3vw;
@@ -146,11 +144,21 @@ html, body {
     padding: 0.5vw;
     font-size: 2vw;
   }
+  .artistImage {
+    width: 15vw;
+    height: auto;
+  }
+  .arrowImage {
+    width: 50%;
+  }
 }
 
 @media all and (max-width: 1024px) {
   .conditional-center {
     text-align: right;
+  }
+  .conditional-top {
+    margin-top: 3vh;
   }
   .title {
     font-size: 100px;
@@ -180,6 +188,18 @@ html, body {
     padding: 1vw;
     font-size: 4vw;
   }
+  .artistImage {
+    width: 70vw;
+    height: auto;
+  }
+  .arrowImage {
+    width: 30%;
+  }
+}
+
+.artistImage {
+  border-radius: 100%;
+  border: 4px solid white;
 }
 
 .subtext {
@@ -190,13 +210,97 @@ html, body {
   padding-left: 30%;
 }
 
-#sponsors {
-  background: #ffffff;
-  height: auto;
-  flex-direction: column;
-  flex-flow: column wrap;
-}
-
 .right-align {
   text-align: right;
+}
+
+.menuItem {
+  float: right;
+  margin: 1em;
+  font-family: 'Gill Sans';
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  padding-right: 1em;
+}
+
+.menuItem:hover {
+  color: #E6E6E6;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background: url(../assets/aboutbackground.png) no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.glider {
+  width: 90vw;
+  text-align: center;
+}
+
+h4, p {
+  color: white;
+  font-family: 'Gill Sans';
+}
+
+.artistWrapper {
+  text-align: center;
+  line-height: 70%;
+}
+
+.artistInfo {
+  line-height: 40%;
+}
+
+.majorText {
+  margin-top: 1.5em;
+}
+
+.dishText {
+  font-style: italic;
+  font-size: .85em;
+}
+
+.aboutDesc {
+  font-size: .8em; 
+  font-family: 'Gill Sans';
+}
+
+
+@media all and (min-width: 2500px) {
+  .subtext {
+      text-align: left;
+      padding-right: 20%;
+      font-size: 2.5em;
+  }
+
+  .menuItem {
+      font-size: 3em;
+  }
+
+  .artistName {
+    font-size: 3em;
+  }
+
+  .artistInfo {
+    font-size: 2.5em;
+  }
+
+  .aboutDesc {
+    font-size: 1.2em;
+  }
+
+}
+
+.image_off, #button1:hover .image_on {
+  display: none
+}
+
+.image_on, #button1:hover .image_off {
+  display: block
 }

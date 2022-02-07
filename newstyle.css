@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url("./css/gillsans/Gill Sans.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#C86AFF, #001355);
+}
+
+
+.menuItem {
+    float: right;
+    margin: 1em;
+    font-family: 'Gill Sans';
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+.menuItem:hover {
+    color: #E6E6E6;
+}
+
+.subtext {
+    font-family: 'Gill Sans';
+    color: #E6E6E6;
+}
+
+.image_off, #home:hover .image_on {
+    display: none
+}
+
+.image_on, #home:hover .image_off {
+    display: block
+}
+
+@media all and (max-width: 1025px) {
+    .subtext {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 2.5em;
+    }
+    .conditional-top {
+        margin-top: 5vh;
+    }
+    .conditional-top-small {
+        margin-top: 3vh;
+    }
+    .conditional-center {
+        text-align: center;
+    }
+    .image_on, .image_off {
+        width: 100%;
+        margin: 0 2vw 3vw 2vw;
+    }
+
+    .mainimage {
+        height: auto;
+        width: 100%;
+    }
+
+    body {
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat;
+        background-size: cover, contain;
+    }
+
+}
+
+@media all and (min-width: 1025px) {
+    .subtext {
+        text-align: left;
+        padding-right: 20%;
+        font-size: 1.2em;
+    }
+    .image_on, .image_off {
+        width: 90%;
+    }
+
+    .mainimage {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 30% no-repeat;
+        background-size: cover, contain, 10vw, 35vw;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .subtext {
+        text-align: left;
+        padding-right: 20%;
+        font-size: 2em;
+    }
+    .image_on, .image_off {
+        width: 90%;
+    }
+
+    .mainimage {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 30% no-repeat;
+        background-size: cover, contain, 10vw, 35vw;
+    }
+}
+
+
+@media all and (min-width: 2500px) {
+    .subtext {
+        text-align: left;
+        padding-right: 20%;
+        font-size: 3em;
+    }
+    .image_on, .image_off {
+        width: 90%;
+    }
+
+    .mainimage {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 18% no-repeat;
+        background-size: cover, contain, 10vw, 35vw;
+    }
+
+    .menuItem {
+        font-size: 3em;
+    }
+}
