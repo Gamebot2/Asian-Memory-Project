@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url("./css/gillsans/Gill Sans.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #110D28;
+}
+
+.navigation-bar {
+    background: rgba(0, 0, 0, 0.35);
+    min-height: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.menuItem {
+    float: right;
+    margin: 1em;
+    font-family: 'Gill Sans';
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+@media all and (max-width: 1024px) {
+    .menuItem {
+        padding: 0;
+    }
+}
+
+.menuItem:hover {
+    color: #E6E6E6;
+}
+
+.headertext {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.firstRow {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 4em;
+}
+
+.welcomeBox {
+    text-align: center;
+    margin: 2vw 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 100%;
+}
+
+
+.sectionHeader {
+    font-family: 'Gill Sans';
+    font-weight: 600;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.attendHeader {
+    margin: 0 0 1em;
+    padding: .5em 0;
+    width: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.smallSectionHeader {
+    font-family: 'Gill Sans';
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.row {
+    margin: 0 10%;
+}
+
+.sectionBox {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    margin: 2em 0em;
+}
+
+.thickBorder {
+    border: 5px solid #FFFFFF;
+}
+
+.contentLink {
+    color: #f488e5;
+}
+
+.contentLink:hover {
+    color: #f164dd;
+}
+
+.contentLink:visited {
+    color: #cf13b4
+}
+
+.imgWrapper {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+
+.sectionList {
+    margin: 2em 0 2.5em;
+}
+
+.arrowWrapper {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+.sectionSubHeader {
+    font-family: 'Gill Sans';
+    font-weight: bold;
+}
+
+.sectionText {
+    font-family: 'Gill Sans';
+    text-align: center;
+    color: white;
+}
+
+
+/* For phones and other small devices */
+@media all and (max-width: 1025px) {
+
+    .conditional-title-width {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    .conditional-top {
+        margin-top: 5vh;
+    }
+
+    .conditional-top-small {
+        margin-top: 3vh;
+    }
+
+    .conditional-center {
+        text-align: center;
+    }
+
+    .titleWrapper {
+        margin: 9em 10% 3em;
+        text-align: center;
+    }
+
+    .sectionText {
+        margin: "0 10px 10px";
+    }
+
+    .sectionSubHeader {
+        font-size: 1.5em;
+    }
+
+    .conditional-width-90 {
+        width: 90%;
+    }
+
+    .sectionList {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .sectionHeader {
+        font-size: 2em;
+    }
+
+}
+
+/* For laptops with low resolution */
+@media all and (min-width: 1025px) {
+
+    .conditional-image-margin {
+        margin: 2em 7em;
+    }
+
+    .smallSectionHeader {
+        font-size: 2.5em;
+    }
+
+    .conditional-title-width {
+        width: 45%;
+    }
+
+    .titleWrapper {
+        min-height: calc(100vh - 7em);
+        display: flex;
+        align-items: center;
+        padding-top: 10em;
+    }
+
+    .titleOverWrapper {
+        background-image: url('./new_assets/eventsBackground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .skinnyText {
+        margin: 0 20em .5em;
+    }
+
+    .largeMarginRow {
+        margin: 0 20%;
+    }
+
+    .bigSectionText {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        margin: 0 4em .5em;
+    }
+
+    .sectionText {
+        font-style: normal;
+        font-size: 1.2em;
+        margin: 0 4em;
+    }
+
+    .bigSectionTextNoMargin {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        margin: 0 4em 0;
+    }
+
+    .bigSectionTextSlightTopMargin {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        margin: 2em 0 0;
+    }
+
+
+    .sectionListText {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .sectionSubHeader {
+        font-style: normal;
+        font-size: 1.5em;
+        text-align: center;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+/* For laptops with high resolution */
+@media all and (min-width: 2000px) {
+
+    .bigSectionText {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        margin: 0 4em .5em;
+    }
+
+    .sectionText {
+        font-style: normal;
+        font-size: 4em;
+        margin: 0 4em;
+    }
+
+    .bigSectionTextNoMargin {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        margin: 0 4em 0;
+    }
+
+    .bigSectionTextSlightTopMargin {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        margin: 2em 0 0;
+    }
+
+    .sectionListText {
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .sectionSubHeader {
+        font-style: normal;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    .smallSectionHeader {
+        font-size: 4.5em;
+    }
+}

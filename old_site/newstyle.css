@@ -39,6 +39,22 @@ html {
     display: block
 }
 
+#home2 {
+    margin-top: 2em;
+}
+
+.image2_off, #home2:hover .image2_on {
+    display: none
+}
+
+.image2_on, #home2:hover .image2_off {
+    display: block
+}
+
+.image2_on, .image2_off {
+    margin-top: 1em;
+}
+
 @media all and (max-width: 1025px) {
     .subtext {
         text-align: center;
@@ -59,6 +75,11 @@ html {
         width: 100%;
         margin: 0 2vw 3vw 2vw;
     }
+    .image2_on, .image2_off {
+        width: 100%;
+        margin: 2vw 2vw 3vw 2vw;
+    }
+
 
     .mainimage {
         height: auto;
@@ -81,6 +102,9 @@ html {
     .image_on, .image_off {
         width: 90%;
     }
+    .image2_on, .image2_off {
+        width: 100%;
+    }
 
     .mainimage {
         width: 100%;
@@ -94,6 +118,10 @@ html {
 }
 
 @media all and (min-width: 2000px) {
+
+    #amp-logo {
+        min-width: 400px;
+    }
     .subtext {
         text-align: left;
         padding-right: 20%;
@@ -102,6 +130,9 @@ html {
     .image_on, .image_off {
         width: 90%;
     }
+    .image2_on, .image2_off {
+        width: 100%;
+    }
 
     .mainimage {
         width: 100%;
@@ -109,9 +140,14 @@ html {
     }
 
     body {
-        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 30% no-repeat;
-        background-size: cover, contain, 10vw, 35vw;
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 98% 35% no-repeat;
+        background-size: cover, cover, 10vw, 35vw;
     }
+
+    .navigation-bar {
+        min-height: 30em;
+    }
+
 }
 
 
@@ -124,18 +160,28 @@ html {
     .image_on, .image_off {
         width: 90%;
     }
+    .image2_on, .image2_off {
+        width: 100%;
+    }
 
     .mainimage {
         width: 100%;
         height: auto;
+        margin-top: 10em;
     }
 
     body {
-        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) right bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 18% no-repeat;
-        background-size: cover, contain, 10vw, 35vw;
+        background: url(assets/telephoneWires.png) no-repeat center fixed, url(assets/skylinemountains.png) left bottom no-repeat, url(assets/birds.png) 50% 10% no-repeat, url(assets/musicnotes.gif) 95% 18% no-repeat;
+        background-size: cover, 100vw, 10vw, 35vw;
     }
 
     .menuItem {
         font-size: 3em;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .menuItem {
+        padding: 0;
     }
 }

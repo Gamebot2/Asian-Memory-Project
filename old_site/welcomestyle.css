@@ -22,6 +22,12 @@ body {
     padding-right: 1em;
 }
 
+@media all and (max-width: 1024px) {
+    .menuItem {
+        padding: 0;
+    }
+}
+
 .menuItem:hover {
     color: #E6E6E6;
 }
@@ -53,7 +59,6 @@ body {
     font-family: 'Gill Sans';
     font-weight: 600;
     font-size: 2.5em;
-    line-height: 42px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -71,7 +76,6 @@ body {
 .smallSectionHeader {
     font-family: 'Gill Sans';
     font-weight: 600;
-    line-height: 42px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -123,6 +127,17 @@ body {
     margin: 2.5em 0;
 }
 
+.sectionSubHeader {
+    font-family: 'Gill Sans';
+    font-weight: bold;
+}
+
+.sectionText {
+    font-family: 'Gill Sans';
+    text-align: center;
+    color: white;
+}
+
 /* For phones and other small devices */
 @media all and (max-width: 1025px) {
 
@@ -152,15 +167,10 @@ body {
     }
 
     .sectionText {
-        font-family: 'Gill Sans';
-        text-align: center;
-        color: white;
         margin: "0 10px 10px";
     }
 
     .sectionSubHeader {
-        font-family: 'Gill Sans';
-        font-weight: bold;
         font-size: 1.5em;
     }
 
@@ -215,20 +225,14 @@ body {
         font-style: normal;
         font-weight: normal;
         font-size: 1.2em;
-        line-height: 21px;
         text-align: center;
         color: white;
         margin: 0 4em .5em;
     }
 
     .sectionText {
-        font-family: 'Gill Sans';
         font-style: normal;
-        font-weight: normal;
         font-size: 1.2em;
-        line-height: 21px;
-        text-align: center;
-        color: white;
         margin: 0 4em;
     }
 
@@ -237,7 +241,6 @@ body {
         font-style: normal;
         font-weight: normal;
         font-size: 1.2em;
-        line-height: 21px;
         text-align: center;
         color: white;
         margin: 0 4em 0;
@@ -248,18 +251,14 @@ body {
         font-style: normal;
         font-weight: normal;
         font-size: 1em;
-        line-height: 21px;
         text-align: center;
         color: white;
         margin: 0;
     }
 
     .sectionSubHeader {
-        font-family: 'Gill Sans';
         font-style: normal;
-        font-weight: bold;
         font-size: 1.5em;
-        line-height: 28px;
         text-align: center;
     }
 }
@@ -271,21 +270,15 @@ body {
         font-family: 'Gill Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 2em;
-        line-height: 21px;
+        font-size: 3em;
         text-align: center;
         color: white;
         margin: 0 4em .5em;
     }
 
     .sectionText {
-        font-family: 'Gill Sans';
         font-style: normal;
-        font-weight: normal;
-        font-size: 2em;
-        line-height: 21px;
-        text-align: center;
-        color: white;
+        font-size: 4em;
         margin: 0 4em;
     }
 
@@ -293,8 +286,7 @@ body {
         font-family: 'Gill Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 1.5em;
-        line-height: 21px;
+        font-size: 3em;
         text-align: center;
         color: white;
         margin: 0 4em 0;
@@ -304,19 +296,19 @@ body {
         font-family: 'Gill Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 1.5em;
-        line-height: 21px;
+        font-size: 2em;
         text-align: center;
         color: white;
         margin: 0;
     }
 
     .sectionSubHeader {
-        font-family: 'Gill Sans';
         font-style: normal;
-        font-weight: bold;
-        font-size: 2em;
-        line-height: 28px;
+        font-size: 3.5em;
         text-align: center;
+    }
+
+    .smallSectionHeader {
+        font-size: 4.5em;
     }
 }

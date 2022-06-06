@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url("./css/gillsans/Gill Sans.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./css/roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.menuItem {
+    float: right;
+    margin: 1em;
+    font-family: 'Gill Sans';
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+.menuItem:hover {
+    color: #E6E6E6;
+}
+
+.navigation-bar {
+    background: rgba(0, 0, 0, 0.35);
+    min-height: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.mainWrapper {
+    padding-top: 9rem;
+    margin: 0 4rem;
+}
+
+.mainTitle {
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.mainSubtitle, .footerText {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.footerText {
+    margin: 3em auto;
+    width: 90%;
+    text-align: center;
+    font-size: .7em;
+}
+
+body {
+    background-image: url('./new_assets/galleryBackground.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+}

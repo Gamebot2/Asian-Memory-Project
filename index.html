@@ -6,32 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asian Memory Project</title>
     <!-- Latest compiled and minified JavaScript -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="newstyle.css" />
+
+
+    <link rel="stylesheet" href="index_style.css" />
 
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png" />
 </head>
 
 <body>
     <div class="navigation-bar">
-        <a id="amp-logo"
-            style="display:inline-block;min-width:60px;margin: 1vw 0px 0px 1vw;width:10%;z-index:10000"><img
-                src="assets/amp_logo.png" alt="Asian Memory Project" style="width:100%"></a>
-        <a class="menuItem" href="about.html">About</a>
-        <a class="menuItem" href="welcome.html">Welcome</a>
-        <a class="menuItem" href="index.html">Home</a>
-    </div>
-    <div class="row conditional-center" style="width: 100%;">
-        <div class="col-lg-7 col-xs-12 wolf-container">
-            <img class="mainimage" src="assets/HomeImageWolf.png" alt="Home Image" />
+        <a id="amp-logo" style="display:inline-block;margin: 1vw 0px 0px 1vw ;width:10%;z-index:10000"><img
+                src="assets/amp_logo.png" alt="Asian Memory Project" style="width: 100%;"></a>
+        <div>
+            <a class="menuItem" href="poetry.html">Poetry</a>
+            <a class="menuItem" href="gallery.html">Gallery</a>
+            <a class="menuItem" href="team.html">Team</a>
+            <a class="menuItem" href="events.html">Events</a>
+            <a class="menuItem" href="index.html">Home</a>
         </div>
-        <div class="col-lg-5 col-xs-12 conditional-center">
+    </div>
+
+    <div class="conditional-center">
+
+        <!-- MAIN HEADING -->
+        <div class="mainHeading">
+            <div class="mainHeadingText">
+                The Asian Memory Project (AMP) creates multimedia events to unite and amplify Asian representation.
+            </div>
+        </div>
+
+        <!-- UPCOMING EVENTS SECTION -->
+        <div class="container upcomingEvents">
+            <div class="sectionTitle">
+                Upcoming Events
+            </div>
+            <div class="upcomingEventsSubtext">
+                Stay tuned for our events with the Austin Public Library in July.
+            </div>
+            <div class="row center eventWrapper">
+                <div class="col-lg-3 eventButton firstEventButton">
+                    July 16th
+                </div>
+                <div class="col-lg-9 eventInfo">
+                    <span class="eventTitle firstEventTitle">Concert and Crafts</span><br>
+                    <span class="eventSubtext">Come create Studio Ghibli crafts with live musical performance at Austin
+                        Public Library Oak Hill Branch. </span>
+                </div>
+            </div>
+            <hr style="border-width: 2px; width: 80%;">
+            <div class="row center eventWrapper">
+                <div class="col-lg-3 eventButton secondEventButton">
+                    July 23rd
+                </div>
+                <div class="col-lg-9 eventInfo">
+                    <span class="eventTitle secondEventTitle">Concert and Crafts</span><br>
+                    <span class="eventSubtext">Come create Studio Ghibli crafts with live musical performance at Austin
+                        Public Library Pleasant Hill Branch.</span>
+                </div>
+            </div>
+            <hr style="border-width: 2px; width: 80%;">
+            <div class="row center eventWrapper">
+                <div class="col-lg-3 eventButton thirdEventButton">
+                    July 29th
+                </div>
+                <div class="col-lg-9 eventInfo">
+                    <span class="eventTitle thirdEventTitle">AMP x APL After Dark</span><br>
+                    <span class="eventSubtext"> 21+ Event only - drinks and live music </span>
+                </div>
+            </div>
+            <hr style="border-width: 2px; width: 80%;">
+            <div class="row center eventWrapper">
+                <div class="col-lg-3 eventButton fourthEventButton">
+                    July 30th
+                </div>
+                <div class="col-lg-9 eventInfo">
+                    <span class="eventTitle fourthEventTitle">A Studio Ghibli Tribute x APL</span><br>
+                    <span class="eventSubtext"> Ghibli music and fun for all ages! </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUOTE AND GALLERY SECTION -->
+        <div class="container-fluid quoteAndGallery">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 quoteSection">
+                    <span class="quoteHeading">“laughing, the spirits in deep woods we wander say the past years are
+                        near”</span><br>
+                    <div class="quoteText">Join us for multimedia events steeped in childhood awe and memory. Check out
+                        our gallery to see media from our past events!</div>
+                    <div class="quoteText">Shadow Lightbox Panels by Pranav Subramanian and Maya Hazarika</div>
+                    <div class="galleryLink"><a href="gallery_new.html"><span class="seeMore">See gallery
+                            </span>&#8594;</a></div>
+                </div>
+                <div class="col-lg-6 col-xs-12 panelPictureWrapper">
+                    <img src="./new_assets/lightboxes.jpg" class="lightboxImage" />
+                </div>
+            </div>
+        </div>
+
+        <!-- READ ABOUT US SECTION -->
+        <div class="container">
+            <div class="sectionTitle">
+                Read About Us:
+            </div>
+            <div class="row articleWrapper">
+                <div class="col-lg-6 col-xs-12 panelPictureWrapper">
+                    <img src="./new_assets/dailyTexanArticle.png" class="articleImage" />
+                </div>
+                <div class="col-lg-6 col-xs-12 panelPictureWrapper">
+                    <img src="./new_assets/liberatorArticle.png" class="articleImage" />
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT SECTION -->
+        <div class="container-fluid quoteAndGallery">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 quoteSection">
+                    <span class="quoteHeading">Contact</span><br>
+                    <div class="contactWrapper">
+                        <div class="contactLeft">
+                            <div class="quoteText">Email <span
+                                    style="text-decoration: underline;">asianmemoryproject@gmail.com</span></div>
+                            <div class="quoteText">Follow our socials, @asianmemoryproject</div>
+                        </div>
+                        <div class="contactRight">
+                            <a href="" target="_blank"><img src="./new_assets/twv.png" class="socialMedia" style="width: 4em" /></a>
+                            <a href="https://www.instagram.com/asianmemoryproject/" target="_blank"><img src="./new_assets/igv.png" class="socialMedia" style="width: 4em" /></a>
+                            <a href="https://www.facebook.com/asianmemoryproject/" target="_blank"><img src="./new_assets/fbv.png" class="socialMedia" style="width: 4em" /></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--div class="col-lg-4 col-xs-12 conditional-center">
             <img class="conditional-top" src="assets/title-text.png" alt="A Studio Ghibli Tribute"
                 style="margin-bottom: 1em; width: 80%;" />
             <div class="subtext conditional-top-small">
@@ -42,16 +161,29 @@
                     Castle, Spirited Away,</span> and <span style="font-style:italic">Princess Mononoke</span>.
             </div>
             <div style="margin-bottom: 10vh;">
-                <a id="home"
-                    href="https://www.eventbrite.com/e/a-studio-ghibli-tribute-tickets-252333515337"
+                <a id="home" href="https://www.eventbrite.com/e/a-studio-ghibli-tribute-tickets-252333515337"
                     target="_blank">
-                    <img class="image_on" src="assets/buttonAnimation.gif" />
-                    <img class="image_off" src="assets/buttonHover.gif" />
+                    <img class="image_on" src="assets/April1st.gif" />
+                    <img class="image_off" src="assets/April1stHover.gif" />
+                </a>
+                <a id="home2"
+                    href="https://www.eventbrite.com/e/a-studio-ghibli-tribute-encore-concert-tickets-288276642197?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb"
+                    target="_blank">
+                    <img class="image2_on" src="assets/April15th.gif" />
+                    <img class="image2_off" src="assets/April15thHover.gif" />
                 </a>
             </div>
-        </div>
+        </div-->
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,477 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Memory Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" type="text/css" href="glider/glider.css">
+<link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png" />
+</head>
+<script src="glider/glider.js"></script>
+
+<script>
+    window.addEventListener('load', function () {
+        new Glider(document.querySelector('.glider'), {
+            setting- name: setting - value
+        })
+    });
+</script>
+
+<body>
+    <div class="navigation-bar">
+        <a id="amp-logo"
+            style="display:inline-block;min-width:60px;margin: 1vw 0px 0px 1vw;width:10%;z-index:10000"><img
+                src="assets/amp_logo.png" alt="Asian Memory Project" style="width:100%"></a>
+        <a class="menuItem" href="poetry.html">Poetry</a>
+        <a class="menuItem" href="about.html">About</a>
+        <a class="menuItem" href="welcome.html">Welcome</a>
+        <a class="menuItem" href="index.html">Home</a>
+    </div>
+    <main>
+
+        <div class="header heading parent-center">
+            About
+        </div>
+        <div class="contents normal-text parent-center">
+            <div class="content-margin" style="text-align:center;">
+                <p class="aboutDesc">
+                    Click on our pictures to learn more about us and our part in this story
+                </p>
+            </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div id="dorothyModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('dorothyModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/DorothyLe.jpeg" class="artistImageModal" />
+                        <h4 class="artistName">Dorothy Lê</h4>
+                        <div class="artistInfo">
+                            <p>Flutist and Project Lead</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Dorothy Lê is a BA music student at the University of Texas at Austin where she
+                        studies flute
+                        with Professor Marianne Gedigian and is completing her capstone project with Professor James
+                        Gabrillo. She is the founder and director of AMP, an idea that started from creating a simple
+                        recital where her parents can connect with the music. You'll see her play the flute at events in
+                        flat shoes because she refuses to wear heels. In her free time, you can catch her eating spicy
+                        instant noodles or rewatching her favorite show, Avatar: The Last Airbender. As a flutist, she
+                        should probably be an airbender, but deep down, Dorothy is actually a waterbender.</p>
+                </div>
+            </div>
+        </div>
+        <div id="danielModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('danielModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/DanielKim.jpg" class="artistImageModal" />
+                        <h4 class="artistName">Daniel Kim</h4>
+                        <div class="artistInfo">
+                            <p>Composer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Daniel Kim is a 3rd year BM Composition major at UT Austin and is currently
+                        studying with Dr. Grantham. He is one of the arrangers of the music, likes cats and dark
+                        chocolate, and enjoys Studio Ghibli movies for their simplistic and nostalgic qualities. </p>
+                </div>
+            </div>
+        </div>
+        <div id="jingchaoModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('jingchaoModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/JingchaoWang.JPG" class="artistImageModal" />
+                        <h4 class="artistName">Jingchao Wang</h4>
+                        <div class="artistInfo">
+                            <p>Composer</p>
+                        </div>
+                    </div>
+                    <p class="smallBioText">Jingchao Wang (b. 1994) is a US-based composer who has
+                        been living in China,
+                        Germany and the US. Her music is influenced by Eclecticism with numerous Eastern elements. In
+                        2009, Jingchao was accepted to the composition department of the Central Conservatory of Music
+                        High School with the highest overall ranking. Three years later, she was admitted by the Central
+                        Conservatory of Music as the top-ranked student where she studied with Prof. Xiaogang Ye. During
+                        her undergraduate studies, Jingchao was exchanged in Hochschule für Musik und Theater Hamburg,
+                        Germany, as the first composition bachelor student in CCOM with the support of the National
+                        Scholarship honored by the China Ministry of Education. During her time in Hamburg, she hosted
+                        the concert “Imagine and Reflection” to popularize Chinese contemporary music. Jingchao pursued
+                        her Master’s degree in Composition at the Peabody Institute of Johns Hopkins University, where
+                        she studied in the studio of Professor Michael Hersch. Jingchao is currently an Assistant
+                        Instructor at The University of Texas at Austin, meanwhile doing her DMA degree in Composition.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="selinaModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('selinaModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/SelinaXu.jpg" class="artistImageModal" />
+                        <h4 class="artistName">Selina Xu</h4>
+                        <div class="artistInfo">
+                            <p>Cellist</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Second prize winner of the Florida Keys International Music Competition, Yilin
+                        (Selina) Xu had her solo debut at the Carnegie’s Weill Recital Hall at the age of 17. As an
+                        international student, Xu appeared with the Shanghai Symphony Orchestra, and was a member of the
+                        Florida Symphony Youth Orchestra (FSYO), Florida Orchestra Association (FOA) of All-State, and
+                        National Orchestra of China (NYO China) of 2020. Xu has attended several music festival around
+                        Europe, such as the Internationaux d’Orchestra de Jeunes, the Summa Cum Laude International
+                        Youth Music Festival. Miss. Xu participated in various cello and chamber masterclasses with
+                        Si-Yan Li, David Bjella, Richard Aaron, Jason Wang, Jamie Clark, Alan Rafferty, Hai-ye Ni, the
+                        Callisto String Quartet, and Miró Quartet. She is currently studying at the University of Texas
+                        at Austin with cellist Bion Tsang.</p>
+                </div>
+            </div>
+        </div>
+        <div id="mayaModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('mayaModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/MayaHazarika.jpeg" class="artistImageModal" />
+                        <h4 class="artistName">Maya Hazarika</h4>
+                        <div class="artistInfo">
+                            <p>Staging Designer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Maya Hazarika is a Dual Architecture and Architectural Engineering Major at UT
+                        completing her 5th year of a 6 year program. Maya is one of the set designers for AMP. Her
+                        professional interests are in sustainable and resilient buildings, but her hobbies outside of
+                        school vary. She enjoys any creative outlet involving her hands, including drawing, painting,
+                        sculpting, embroidery, knitting, cooking, and the list goes on. You can often find her indulging
+                        in one of these activities or catching up on sleep.</p>
+                </div>
+            </div>
+        </div>
+        <div id="ellenModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('ellenModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/EllenOkamura.jpeg" class="artistImageModal" />
+                        <h4 class="artistName">Ellen Okamura</h4>
+                        <div class="artistInfo">
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Ellen Okamura is a Design BFA and Business Minor at the University of Texas at
+                        Austin, who specializes in branding design and UI design. She is finishing up her senior year
+                        with her capstone design project focused on Asian-American female empowerment. Ellen is
+                        currently the lead designer for AMP and contributes to the branding identity, as well as the
+                        website and marketing graphics. As a Japanese American, she was raised on Studio Ghibli movies,
+                        and owns almost all of them on DVD. Her favorite Ghibli movie to this day remains “Spirited
+                        Away”. A fun fact about Ellen is that she is actually pretty small in stature, however, she
+                        makes up for it with a big personality and her trademark heels.</p>
+                </div>
+            </div>
+        </div>
+        <div id="moegiModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('moegiModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/MoegiAmano.jpeg" class="artistImageModal" />
+                        <h4 class="artistName">Moegi Amano</h4>
+                        <div class="artistInfo">
+                            <p>Pianist</p>
+                        </div>
+                    </div>
+                    <p class="bioText">Moegi Amano is pursuing her Master of Music at the University of Texas at Austin,
+                        where she also completed her bachelor in 2020. She studies under Anton Nel and is the pianist
+                        for AMP. Although originally from Japan, she grew up in multiple places, including her hometown
+                        Yokkaichi, Kyoto, Kentucky, and Singapore, and considers herself a third culture kid. Through
+                        AMP, she enjoys being able to connect with others from Asian backgrounds and feels fortunate to
+                        share her love for Ghibli and for music with the audience.</p>
+                </div>
+            </div>
+        </div>
+        <div id="pranavModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('pranavModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/PranavSubramanian.jpg" class="artistImageModal" />
+                        <h4 class="artistName">Pranav Subramanian</h4>
+                        <div class="artistInfo">
+                            <p>Staging Designer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">
+                        Pranav Subramanian is wrapping up his final year in the architecture program at the University
+                        of Texas. He is the stage designer for AMP, along with Maya Hazarika, and will be designing the
+                        venue layout and set pieces for “A Studio Ghibli Tribute.” Pranav just came back from the
+                        Netherlands, where he spent 6 months reintroducing Europeans to Indian cooking.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="sammyModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('sammyModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/SammyLe.jpg" class="artistImageModal" />
+                        <h4 class="artistName">Sammy Le</h4>
+                        <div class="artistInfo">
+                            <p>Poet and Writer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">
+                        Samuel Lê is a poet currently working on an MFA at the University of Massachusetts at Amherst
+                        where he studies under Ocean Vuong. He will be responding to Miyazaki's films with poetry to
+                        accompany the sonic tribute. He loves cuddling with his 2 shiba inus and going out to discotecas
+                        to dance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="anshModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"
+                    onclick="document.getElementById('anshModal').style.display = 'none';">&times;</span>
+                <div class="modalArtistWrapper artistWrapper">
+                    <div class="withinModal">
+                        <img src="artist_images/AnshJain.jpeg" class="artistImageModal" />
+                        <h4 class="artistName">Ansh Jain</h4>
+                        <div class="artistInfo">
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                    <p class="bioText">
+                        Ansh Jain is a computer science and math student at UT Austin, with a focus on general software
+                        engineering and its applications in the tech industry. He builds and maintains the website for
+                        AMP, and you'll see him at the events loving the music despite never having seen a Ghibli movie.
+                        In his free time, he likes to work on his 2022 New Year's Resolution, which is to learn how to
+                        proficiently spin nunchucks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conditional-top">
+            <div class="glider-contain conditional-top" style="width: 90%">
+                <div class="glider">
+                    <div class="artistWrapper"
+                        onclick="document.getElementById('dorothyModal').style.display = 'block';">
+                        <img src="artist_images/DorothyLe.jpeg" class="artistImage" />
+                        <h4 class="artistName">Dorothy Lê</h4>
+                        <div class="artistInfo">
+                            <p>Flutist and Project Lead</p>
+                            <p>Vietnamese-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">bánh xèo (Viet crispy crepe)</p>
+                            <p class="majorText">UT Music</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper"
+                        onclick="document.getElementById('danielModal').style.display = 'block';">
+                        <img src="artist_images/DanielKim.jpg" class="artistImage" />
+                        <h4 class="artistName">Daniel Kim</h4>
+                        <div class="artistInfo">
+                            <p>Composer</p>
+                            <p>Korean</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Tonkatsu</p>
+                            <p class="majorText">UT Music Composition</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper"
+                        onclick="document.getElementById('jingchaoModal').style.display = 'block';">
+                        <img src="artist_images/JingchaoWang.JPG" class="artistImage" />
+                        <h4 class="artistName">Jingchao Wang</h4>
+                        <div class="artistInfo">
+                            <p>Composer</p>
+                            <p>Chinese</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Spicy Hotpot</p>
+                            <p class="majorText">UT Music Composition DMA</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper"
+                        onclick="document.getElementById('selinaModal').style.display = 'block';">
+                        <img src="artist_images/SelinaXu.jpg" class="artistImage" />
+                        <h4 class="artistName">Selina Xu</h4>
+                        <div class="artistInfo">
+                            <p>Cellist</p>
+                            <p>Chinese</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Hotpot</p>
+                            <p class="majorText">UT Music Performance</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper" onclick="document.getElementById('mayaModal').style.display = 'block';">
+                        <img src="artist_images/MayaHazarika.jpeg" class="artistImage" />
+                        <h4 class="artistName">Maya Hazarika</h4>
+                        <div class="artistInfo">
+                            <p>Staging Designer</p>
+                            <p>Indian-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Darjeeling/Nepalese Thali</p>
+                            <p class="majorText">UT Architecture</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper" onclick="document.getElementById('ellenModal').style.display = 'block';">
+                        <img src="artist_images/EllenOkamura.jpeg" class="artistImage" />
+                        <h4 class="artistName">Ellen Okamura</h4>
+                        <div class="artistInfo">
+                            <p>Graphic Designer</p>
+                            <p>Japanese-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Zaru Soba</p>
+                            <p class="majorText">UT Design</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper" onclick="document.getElementById('moegiModal').style.display = 'block';">
+                        <img src="artist_images/MoegiAmano.jpeg" class="artistImage" />
+                        <h4 class="artistName">Moegi Amano</h4>
+                        <div class="artistInfo">
+                            <p>Pianist</p>
+                            <p>Japanese</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Oden and Okonomiyaki</p>
+                            <p class="majorText">UT MM Piano</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper"
+                        onclick="document.getElementById('pranavModal').style.display = 'block';">
+                        <img src="artist_images/PranavSubramanian.jpg" class="artistImage" />
+                        <h4 class="artistName">Pranav Subramanian</h4>
+                        <div class="artistInfo">
+                            <p>Staging Designer</p>
+                            <p>Indian-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Palak Paneer</p>
+                            <p class="majorText">UT Architecture</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper" onclick="document.getElementById('sammyModal').style.display = 'block';">
+                        <img src="artist_images/SammyLe.jpg" class="artistImage" />
+                        <h4 class="artistName">Sammy Le</h4>
+                        <div class="artistInfo">
+                            <p>Poet and Writer</p>
+                            <p>Vietnamese-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Momma Hoa's Chicken Phở</p>
+                            <p class="majorText">UMass Amherst MFA</p>
+                        </div>
+                    </div>
+                    <div class="artistWrapper" onclick="document.getElementById('anshModal').style.display = 'block';">
+                        <img src="artist_images/AnshJain.jpeg" class="artistImage" />
+                        <h4 class="artistName">Ansh Jain</h4>
+                        <div class="artistInfo">
+                            <p>Web Developer</p>
+                            <p>Indian-American</p>
+                            <p>Favorite home-cooked dish:</p>
+                            <p class="dishText">Chili Paneer</p>
+                            <p class="majorText">UT Computer Science and Math</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button aria-label="Previous" class="glider-prev"><img src="assets/arrowL.png"
+                        class="arrowImage" /></button>
+                <button aria-label="Next" class="glider-next"><img src="assets/arrowR.png"
+                        class="arrowImage" /></button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </div>
+
+        <div class="contents normal-text parent-center">
+            <div class="content-margin" style="text-align:center;width:80vw;">
+                <p class="aboutDesc">
+                    This event was made possible by the Presser Foundation, Rainwater Grant, and the Butler School of
+                    Music Faculty Development Grant. The team would also like to thank their own parents for all the hot
+                    meals, cut fruits, and if applicable, endless rides to high school marching band rehearsals at
+                    unreasonable hours. To our moms and dads, this is dedicated to you.
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="js/app.js"></script>
+    <script>
+        var dorothyModal = document.getElementById('dorothyModal');
+        var danielModal = document.getElementById("danielModal");
+        var jingchaoModal = document.getElementById("jingchaoModal");
+        var selinaModal = document.getElementById("selinaModal");
+        var mayaModal = document.getElementById("mayaModal");
+        var ellenModal = document.getElementById("ellenModal");
+        var moegiModal = document.getElementById("moegiModal");
+        var pranavModal = document.getElementById("pranavModal");
+        var sammyModal = document.getElementById("sammyModal");
+        var anshModal = document.getElementById("anshModal");
+        const modals = [dorothyModal, danielModal, jingchaoModal, selinaModal, mayaModal, ellenModal, moegiModal, pranavModal, sammyModal, anshModal]
+
+        window.onclick = function (event) {
+            for (var i = 0; i < modals.length; i++) {
+                modal = modals[i];
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+<script>
+
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        scrollLock: true,
+        scrollLockDelay: 0,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+        responsive: [
+            {
+                // screens greater than >= 1024px
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+</script>
+
+</html>

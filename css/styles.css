@@ -151,6 +151,28 @@ html {
   .arrowImage {
     width: 50%;
   }
+  .modalArtistWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .artistImageModal {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 15vw;
+  }
+  .bioText {
+    line-height: 1.4em;
+    text-align: left;
+    padding-right: .5em;
+  }
+
+  .smallBioText {
+    line-height: 1.4em;
+    text-align: left;
+    padding-right: .5em;
+    font-size: 2em;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -194,6 +216,21 @@ html {
   }
   .arrowImage {
     width: 30%;
+  }
+  .artistImageModal {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 100%;
+  }
+  .bioText {
+    line-height: 1.4em;
+    text-align: center;
+    padding-right: .5em;
+  }
+  .smallBioText {
+    line-height: 1.4em;
+    text-align: center;
+    padding-right: .5em;
   }
 }
 
@@ -253,8 +290,8 @@ h4, p {
   line-height: 70%;
 }
 
+
 .artistInfo {
-  line-height: 40%;
 }
 
 .majorText {
@@ -271,6 +308,9 @@ h4, p {
   font-family: 'Gill Sans';
 }
 
+.smallBioText {
+  font-size: .8em;
+}
 
 @media all and (min-width: 2500px) {
   .subtext {
@@ -295,6 +335,18 @@ h4, p {
     font-size: 1.2em;
   }
 
+  .bioText {
+    font-size: 2.5em;
+  }
+
+  .smallBioText {
+    font-size: 2em;
+  }
+
+  .close {
+    font-size: 2.5em;
+  }
+
 }
 
 .image_off, #button1:hover .image_on {
@@ -303,4 +355,56 @@ h4, p {
 
 .image_on, #button1:hover .image_off {
   display: block
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(138.3deg, #D893FF 19.49%, #304193 84.28%);
+  border: 5px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 28px;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #eee;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.withinModal {
+  margin: 0 3em;
+}
+
+@media all and (max-width: 1024px) {
+  .menuItem {
+      padding: 0;
+  }
 }
